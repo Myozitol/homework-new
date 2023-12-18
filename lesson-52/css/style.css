@@ -1,0 +1,86 @@
+.units {
+  display: flex;
+  font-size: 50px;
+  gap: 50px;
+}
+
+.units__col {
+  flex: 0 1 50%;
+}
+
+.units__col h2 {
+  text-align: center;
+}
+
+.units__item {
+  font-size: 30px;
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: #333;
+  margin: 50px 0;
+}
+
+p {
+  font-size: 40px;
+}
+
+.em__quad, .vhw__quad, .rem__quad, .precents__quad {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+}
+
+.precents__parent-quad {
+  background-color: green;
+}
+.precents__child-quad {
+  background-color: #333;
+}
+
+/* -------------------------------------------- */
+
+.precents__parent-quad {
+  width: 500px;
+  height: 500px;
+}
+
+.precents__child-quad {
+  width: 50%;
+  height: 100%;
+}
+
+.precents__text {
+  font-size: 200%;
+  line-height: 100%;
+}
+
+.precents__quad {
+  /* margin-bottom: 100%; */
+}
+
+.vhw__text-1 {
+  font-size: 4vw;
+}
+
+.vhw__quad {
+  width: 50vh;
+  height: 100vw;
+}
+
+.em{
+  font-size: 30px;
+}
+
+.em__text {
+  font-size: 2em;
+  /* height: 10em; */
+}
+
+.rem__text {
+  font-size: 2rem;
+}
