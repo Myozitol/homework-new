@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Оставьте Ваш отзыв:</legend>
+            <label for="form-name">Ваше имя:</label>
+            <input type="text" id="form-name" placeholder="Ваше имя">
+            <label for="form-mail">Ваш email:</label>
+            <input type="email" id="form-mail" placeholder="dog@dog.com" required>
+            <label>
+                Ваш пол:
+                <input type="text" id="mf">
+            </label>
+            <select name="#" id="mf">
+                <option value="#">--Выберите--</option>
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+            </select>
+            <br>
+            <label for="area">Послание:</label>
+            <textarea name="#" id="area" cols="53" rows="3"></textarea>
+            <br>
+            <label>
+                Телефон для обратной связи:
+                <input type="tel" placeholder="+7(000)000000">
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Ознакомлен с условиями пользования
+            </label>
+            <label>
+                <input type="checkbox">
+                Разрешаю обработку персональных данных
+            </label>
+            <label>
+                <input type="checkbox">
+                Никому не передавать данные
+            </label>
+            <br>
+            <label>
+                Принимаю риски на 100%
+                <input type="radio" name="risk">
+            </label>
+            <br>
+            <label>
+                Принимаю риски на 50%
+                <input type="radio" name="risk">
+            </label>
+            <br>
+            <label>
+                Не принимаю риски (не рекомендуем выбирать)
+                <input type="radio" name="risk">
+            </label>
+            <br>
+            <button type="submit">Отправить</button>
+            <button type="reset">Сброс</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
