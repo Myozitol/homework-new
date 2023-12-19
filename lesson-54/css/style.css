@@ -1,0 +1,28 @@
+body {
+    background: #000;
+    color: #fff;
+    font-size: 300%;
+}
+
+.figure {
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+    max-height: 100px;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.figure__ball {
+    background: #ff0000;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+}
