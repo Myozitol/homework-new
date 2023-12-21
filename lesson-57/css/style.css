@@ -1,0 +1,45 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/* ====================================================== */
+
+.title {
+    position: relative;
+}
+
+.title::before, 
+.title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title::before {
+    left: -150px;
+    background: #fd6365;
+}
+
+.title::after {
+    right: -150px;
+    background: #5f5eef;
+}
