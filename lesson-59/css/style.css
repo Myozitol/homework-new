@@ -1,0 +1,63 @@
+body {
+    background-color: #1e1e20;
+}
+
+.wrapper {
+    padding: 50px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 864px;
+    background-color: #444;
+}
+
+.block {
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+.container__cube {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    width: calc(100% - 400px);
+    height: 464px;
+    background-color: black;
+}
+
+/* ========================================================= */
+
+.block {
+    animation: move_block 3s infinite;
+
+}
+
+@keyframes move_block {
+    0% {
+        left: 0;
+        top: 0;
+    } 
+    25% {
+        left: calc(100% - 200px);
+        top: 0;
+    }
+    50% {
+        left: calc(100% - 200px);
+        top: 664px;
+    }
+    75% {
+        top: 664px;
+        left: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
