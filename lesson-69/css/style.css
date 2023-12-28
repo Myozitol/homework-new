@@ -1,0 +1,48 @@
+body {
+    background-color: #F8FCFF;
+    color: #25282B;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 125%;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.header__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    min-height: 108px;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+.nav {
+}
+.nav__list {
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+}
+.nav__item {
+}
+.nav__link {
+}
+.header__logo {
+    max-width: 54px;
+}
+.socials {
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.socials__item {
+}
+.socials-link {
+}
