@@ -1,0 +1,50 @@
+.wrapper {
+    position: relative;
+}
+.modal {
+    background: #7fe7e7;
+    border: #1b4646 1px solid;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.window {
+    background: #1b4646;
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.modal_open {
+    position: relative;
+    left: 30%;
+    width: 100%;
+    max-width: 35vw;
+    border: #1b4646 2px solid;
+    border-radius: 10px;
+    padding: 40px 40px;
+    z-index: 3;
+    background: #fff;
+    visibility: hidden;
+}
+
+.open {
+    visibility: visible;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    background: #fff;
+}
