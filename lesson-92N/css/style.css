@@ -1,0 +1,53 @@
+.body {
+    min-height: 200vh;
+}
+
+.body--fixed {
+    overflow-y: hidden;
+}
+
+.btn-open {
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #041d2fd9;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.modal--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-window {
+    position: relative;
+    width: 50vw;
+    min-height: 40vh;
+    padding: 50px 20px 20px 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.modal__close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
