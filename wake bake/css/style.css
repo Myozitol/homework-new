@@ -1,0 +1,32 @@
+:root {
+    --accent-text: #1D6FB6;
+    --white-text: #F8FCFF;
+}
+
+body {
+    background: #FFF9F4;
+    color: #312C27;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/*=====================================================================*/
