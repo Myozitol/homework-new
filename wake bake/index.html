@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Wake & Bake</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a class="header__logo" href="#"><img src="./img/icons/logos/dark.svg" alt="Логтип компании"></a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Программа обучения</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Галерея</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="burger-icon" href="#">
+                        <span></span>
+                    </a>
+                </div>
+                <section class="hero__main hero">
+                    <div class="hero__inner">
+                        <div class="hero__content">
+                            <div class="hero__info">
+                                <span>Старт</span>
+                                <span>26.06.2023</span>
+                            </div>
+                            <h1 class="hero__title title">
+                                Научись печь торты и десерты с нуля
+                            </h1>
+                            <p class="hero__text">
+                                За 8 практических занятий ты получишь новые возможности для самореализации и любимое
+                                дело
+                            </p>
+                            <div class="hero__img-control hero__img-control--mobile">
+                                <a class="hero__img-button" data-fslightbox="gallery-1" href="./media/cake.mp4">
+                                    <img src="./img/icons/play.svg" alt="" class="hero__play">
+                                </a>
+                                Посмотри, как готовятся наши торты
+                            </div>
+                            <button class="hero__button button">Записаться на курс</button>
+                        </div>
+                        <div class="hero__img">
+                            <img src="./img/content/girl.png" alt="Девушка с тортом">
+                            <div class="hero__img-control">
+                                <a class="hero__img-button" data-fslightbox="gallery" href="./media/cake.mp4">
+                                    <img src="./img/icons/play.svg" alt="" class="hero__play">
+                                </a>
+                                Посмотри, как готовятся наши торты
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__about about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__img">
+                            <img src="./img/content/girl2.jpg" alt="Девушка с тортом">
+                            <div class="about__img-control">
+                                <button class="about__img-button">
+                                    <img src="./img/icons/gift.svg" alt="" class="about__tap">
+                                </button>
+                                Нажми на подарок, чтобы получить наш фирменный рецепт
+                            </div>
+
+                        </div>
+                        <div class="about__body">
+                            <h2 class="about__title title">
+                                Наша школа —
+                            </h2>
+                            <p class="about__subtitle">
+                                это уютный дом для начинающих кондитеров
+                            </p>
+                            <p class="about__text">
+                                С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые знания
+                                и профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению
+                                разнообразных современных и классических десертов
+                            </p>
+                        </div>
+                        <ul class="about__stickers">
+                            <li class="about__stickers-item">
+                                <div class="sticker">
+                                    <img src="./img/icons/hat2.svg" alt="">
+                                </div>
+                                <p class="sticker__text">
+                                    Живое общение с наставниками и одногруппниками
+                                </p>
+                            </li>
+                            <li class="about__stickers-item">
+                                <div class="sticker">
+                                    <img src="./img/icons/hat2.svg" alt="">
+                                </div>
+                                <p class="sticker__text">
+                                    Предоставление всех необходимых материалов
+                                </p>
+                            </li>
+                            <li class="about__stickers-item">
+                                <div class="sticker">
+                                    <img src="./img/icons/hat2.svg" alt="">
+                                </div>
+                                <p class="sticker__text">
+                                    Небольшие группы до 6 человек
+                                </p>
+                            </li>
+                            <li class="about__stickers-item">
+                                <div class="sticker">
+                                    <img src="./img/icons/hat2.svg" alt="">
+                                </div>
+                                <p class="sticker__text">
+                                    Большие аудитории для обучения
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__program program">
+                <div class="container">
+                    <div class="program__top">
+                        <div class="program__heading">
+                            <h2 class="program__title title">
+                                Программа обучения
+                            </h2>
+                            <p class="program__text">
+                                Продолжительность курса — 4 недели <br>
+                                Программа обучения состоит из 8 модулей <br>
+                                На каждое занятие отводится по 6 часов
+                            </p>
+                        </div>
+                        <ul class="tab-controls">
+                            <li class="tab-controls__item ">
+                                <a class="tab-controls__link tab-controls__link--active" href="#tab1">
+                                    Неделя 1
+                                </a>
+                            </li>
+                            <li class="tab-controls__item">
+                                <a class="tab-controls__link" href="#tab2">
+                                    Неделя 2
+                                </a>
+                            </li>
+                            <li class="tab-controls__item">
+                                <a class="tab-controls__link" href="#tab3">
+                                    Неделя 3
+                                </a>
+                            </li>
+                            <li class="tab-controls__item">
+                                <a class="tab-controls__link" href="#tab4">
+                                    Неделя 4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program__tab-content tab-content tab-content--show" id="tab1">
+                        <ul class="accordion-list ">
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Начало кондитерского пути и создание первого торта
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Организация рабочего места
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Подготовка необходимого инвентаря
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Выбор необходимых продуктов
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Советы по закупке необходимых продуктов и инвентаря
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Обзор хранения и заготовки сырья
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">Испечёшь морковный торт с солёной
+                                                карамелью</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Медовик и капкейки
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление и украшение капкейков
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Изготовление крема и конфи
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление медовых коржей для торта
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Пропитка коржей и сборка торта
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Испечёшь капкейки, приготовишь крем и конфи, а также сделаешь своё
+                                                первое пирожное — медовик
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program__tab-content tab-content" id="tab2">
+                        <ul class="accordion-list">
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Песочное тесто и чизкейк
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление песочного теста
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Тонкости в приготовлении меренги
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Изготовление заварного крема
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Выпечка тарталеток
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление нежного чизкейка
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Приготовишь меренги, сделаешь заварной крем для тарталеток и испечёшь 
+                                                свой первый чизкейк
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Бисквиты </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Тонкости выпечки бисквитов
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление ванильного бисквита
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление фисташкового бисквита
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление шоколадного бисквита
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Отработаешь выпечку трёх бисквитов для будущих тортов
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program__tab-content tab-content" id="tab3">
+                        <ul class="accordion-list">
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Дрожжевое тесто
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Технология приготовления дрожжевого теста: тонкости и советы
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление песочного теста
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Рецептурные нюансы
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Приготовишь заготовку для торта
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Работа с кремами
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление кремов: ганаши, кремю
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Создание заварного теста
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление профитролей и нескольких <br> видов кремов
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Приготовишь профитроли и несколько видов кремов
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program__tab-content tab-content" id="tab4">
+                        <ul class="accordion-list">
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Mille-feuille, или Наполеон
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление слоёного теста
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Рецептура и создание крема дипломат
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Приготовление французского морковного <br> десерта
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Испечёте торт «Наполеон» и приготовите необычный морковный десерт
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list__item">
+                                <button class="accordion-list__control">
+                                    <h3 class="accordion-list__control__title title">
+                                        Завершение курса
+                                    </h3>
+                                    <div class="accordion-list__control__icon">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                                fill="#FFA55C" />
+                                            <path
+                                                d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                                fill="#FFA55C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="accordion-list__content">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                Теория:
+                                            </h6>
+                                            <ul class="accordion-content__col-list">
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Работа кондитера на заказ
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Применение знаний о технологии выпечки <br> к другим рецептам
+                                                </li>
+                                                <li class="accordion-content__col-list__item">
+                                                    <div class="accordion-content__col-list-icon">
+                                                        <img src="./img/icons/hat.svg" alt="">
+                                                    </div>
+                                                    Разработка собственных рецептов
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-content__col">
+                                            <h6 class="accordion-content__col-title">
+                                                практика:
+                                            </h6>
+                                            <p class="accordion-content__col-text">
+                                                Самостоятельно, без наставника испечёте торт на ваш выбор
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="program__bottom">
+                        <div class="program__action">
+                            <div class="program__discount">
+                                Успей получить скидку
+                                <div class="program__discount-value">
+                                    -30%
+                                </div>
+                                <span class="program__discount-date">
+                                    до 1 июня
+                                </span>
+                            </div>
+                            <div class="program__price">
+                                <h6 class="program__price-text">
+                                    Стоимость курса без скидки
+                                </h6>
+                                <span class="program__price-value">32 000 руб.</span>
+                            </div>
+                            <div class="program__price">
+                                <h6 class="program__price-text">
+                                    Стоимость курса со скидкой
+                                </h6>
+                                <span class="program__price-value program__price-value--big">22 400 руб.</span>
+                            </div>
+                            <a class="program__button button" href="#">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="program__img">
+                            <img src="./img/decor/cake.png" alt="Торт">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="application">
+                <div class="footer__img">
+                    
+                </div>
+                <h6 class="application__title">
+                    Оставить заявку на обучение
+                </h6>
+                <p class="application__subtitle">
+                    Заполни контактные данные, и наш менеджер свяжется с тобой в ближайшее время
+                </p>
+                <div class="application__input">
+                    <form><input class="name" type="text"></form>
+                    <form><input class="number" type="text"></form>
+                    Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </div>
+                <div class="button application--button">
+                    Записаться на курс
+                </div>
+            </section> -->
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <a class="footer__logo" href="#">
+                            <img src="./img/icons/logos/light.svg" alt="Логотип компании">
+                        </a>
+                        <p class="footer__logo-text">
+                            Школа кондитерского искусства
+                        </p>
+                        <address class="socials">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 10.5C24 10.1022 24.158 9.72064 24.4393 9.43934C24.7206 9.15804 25.1022 9 25.5 9C25.8978 9 26.2794 9.15804 26.5607 9.43934C26.842 9.72064 27 10.1022 27 10.5C27 10.8978 26.842 11.2794 26.5607 11.5607C26.2794 11.842 25.8978 12 25.5 12C25.1022 12 24.7206 11.842 24.4393 11.5607C24.158 11.2794 24 10.8978 24 10.5Z"
+                                                fill="#FFF9F4" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18 10.875C16.1103 10.875 14.2981 11.6257 12.9619 12.9619C11.6257 14.2981 10.875 16.1103 10.875 18C10.875 19.8897 11.6257 21.7019 12.9619 23.0381C14.2981 24.3743 16.1103 25.125 18 25.125C19.8897 25.125 21.7019 24.3743 23.0381 23.0381C24.3743 21.7019 25.125 19.8897 25.125 18C25.125 16.1103 24.3743 14.2981 23.0381 12.9619C21.7019 11.6257 19.8897 10.875 18 10.875ZM13.125 18C13.125 16.7071 13.6386 15.4671 14.5529 14.5529C15.4671 13.6386 16.7071 13.125 18 13.125C19.2929 13.125 20.5329 13.6386 21.4471 14.5529C22.3614 15.4671 22.875 16.7071 22.875 18C22.875 19.2929 22.3614 20.5329 21.4471 21.4471C20.5329 22.3614 19.2929 22.875 18 22.875C16.7071 22.875 15.4671 22.3614 14.5529 21.4471C13.6386 20.5329 13.125 19.2929 13.125 18Z"
+                                                fill="#FFF9F4" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25.8871 4.24833C20.6451 3.66722 15.355 3.66722 10.1131 4.24833C7.09508 4.58583 4.65758 6.96333 4.30358 9.99633C3.68168 15.3132 3.68168 20.6845 4.30358 26.0013C4.65758 29.0343 7.09358 31.4118 10.1131 31.7493C15.3551 32.3298 20.6451 32.3298 25.8871 31.7493C28.9051 31.4118 31.3426 29.0343 31.6966 26.0013C32.3186 20.6845 32.3186 15.3132 31.6966 9.99633C31.3426 6.96333 28.9066 4.58583 25.8871 4.24833ZM10.3621 6.48333C15.4385 5.92064 20.5616 5.92064 25.6381 6.48333C27.6331 6.70833 29.2306 8.28183 29.4631 10.2588C30.0645 15.4013 30.0645 20.5964 29.4631 25.7388C29.3428 26.7064 28.8999 27.6052 28.2058 28.29C27.5118 28.9747 26.6072 29.4056 25.6381 29.5128C20.5616 30.0756 15.4385 30.0756 10.3621 29.5128C9.39299 29.4056 8.48836 28.9747 7.79432 28.29C7.10027 27.6052 6.65734 26.7064 6.53708 25.7388C5.93566 20.5964 5.93566 15.4013 6.53708 10.2588C6.65734 9.29127 7.10027 8.3925 7.79432 7.70771C8.48836 7.02292 9.39299 6.59059 10.3621 6.48333Z"
+                                                fill="#FFF9F4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M31.75 11.902C31.75 11.8246 31.75 11.7367 31.7465 11.6348C31.743 11.35 31.7359 11.0301 31.7289 10.6891C31.7008 9.7082 31.6516 8.73086 31.5742 7.80976C31.4688 6.54062 31.3141 5.48242 31.1031 4.68789C30.8805 3.85873 30.4442 3.10251 29.8377 2.49483C29.2313 1.88715 28.476 1.44928 27.6473 1.225C26.6523 0.957812 24.7047 0.792578 21.9625 0.690625C20.6582 0.641406 19.2625 0.609765 17.8668 0.592187C17.3781 0.585156 16.9246 0.581641 16.5168 0.578125H15.4832C15.0754 0.581641 14.6219 0.585156 14.1332 0.592187C12.7375 0.609765 11.3418 0.641406 10.0375 0.690625C7.29531 0.796094 5.34414 0.961328 4.35273 1.225C3.52375 1.44873 2.76813 1.88641 2.1616 2.49418C1.55507 3.10195 1.11892 3.85846 0.896875 4.68789C0.682422 5.48242 0.53125 6.54062 0.425781 7.80976C0.348437 8.73086 0.299219 9.7082 0.271094 10.6891C0.260547 11.0301 0.257031 11.35 0.253516 11.6348C0.253516 11.7367 0.25 11.8246 0.25 11.902V12.0988C0.25 12.1762 0.25 12.2641 0.253516 12.366C0.257031 12.6508 0.264062 12.9707 0.271094 13.3117C0.299219 14.2926 0.348437 15.2699 0.425781 16.191C0.53125 17.4602 0.685938 18.5184 0.896875 19.3129C1.34688 20.9969 2.66875 22.3258 4.35273 22.7758C5.34414 23.043 7.29531 23.2082 10.0375 23.3102C11.3418 23.3594 12.7375 23.391 14.1332 23.4086C14.6219 23.4156 15.0754 23.4191 15.4832 23.4227H16.5168C16.9246 23.4191 17.3781 23.4156 17.8668 23.4086C19.2625 23.391 20.6582 23.3594 21.9625 23.3102C24.7047 23.2047 26.6559 23.0395 27.6473 22.7758C29.3312 22.3258 30.6531 21.0004 31.1031 19.3129C31.3176 18.5184 31.4688 17.4602 31.5742 16.191C31.6516 15.2699 31.7008 14.2926 31.7289 13.3117C31.7395 12.9707 31.743 12.6508 31.7465 12.366C31.7465 12.2641 31.75 12.1762 31.75 12.0988V11.902ZM29.2188 12.0848C29.2188 12.1586 29.2188 12.2395 29.2152 12.3344C29.2117 12.6086 29.2047 12.9109 29.1977 13.2379C29.173 14.173 29.1238 15.1082 29.05 15.9766C28.9551 17.1086 28.8215 18.0367 28.6562 18.659C28.4383 19.4711 27.7984 20.1145 26.9898 20.3289C26.2516 20.5258 24.3918 20.684 21.8641 20.7789C20.5844 20.8281 19.2062 20.8598 17.8316 20.8773C17.35 20.8844 16.9035 20.8879 16.5027 20.8879H15.4973L14.1684 20.8773C12.7937 20.8598 11.4191 20.8281 10.1359 20.7789C7.6082 20.6805 5.74492 20.5258 5.01016 20.3289C4.20156 20.1109 3.56172 19.4711 3.34375 18.659C3.17852 18.0367 3.04492 17.1086 2.95 15.9766C2.87617 15.1082 2.83047 14.173 2.80234 13.2379C2.7918 12.9109 2.78828 12.6051 2.78477 12.3344C2.78477 12.2395 2.78125 12.1551 2.78125 12.0848V11.916C2.78125 11.8422 2.78125 11.7613 2.78477 11.6664C2.78828 11.3922 2.79531 11.0898 2.80234 10.7629C2.82695 9.82773 2.87617 8.89258 2.95 8.02422C3.04492 6.89219 3.17852 5.96406 3.34375 5.3418C3.56172 4.52969 4.20156 3.88633 5.01016 3.67188C5.74844 3.475 7.6082 3.3168 10.1359 3.22187C11.4156 3.17266 12.7937 3.14102 14.1684 3.12344C14.65 3.11641 15.0965 3.11289 15.4973 3.11289H16.5027L17.8316 3.12344C19.2062 3.14102 20.5809 3.17266 21.8641 3.22187C24.3918 3.32031 26.2551 3.475 26.9898 3.67188C27.7984 3.88984 28.4383 4.52969 28.6562 5.3418C28.8215 5.96406 28.9551 6.89219 29.05 8.02422C29.1238 8.89258 29.1695 9.82773 29.1977 10.7629C29.2082 11.0898 29.2117 11.3957 29.2152 11.6664C29.2152 11.7613 29.2188 11.8457 29.2188 11.916V12.0848ZM12.8711 16.7113L21.0273 11.9652L12.8711 7.28945V16.7113Z"
+                                                fill="#FFF9F4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="36" height="23" viewBox="0 0 36 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M35.1075 18.2974C34.2915 16.6541 33.2163 15.1529 31.923 13.8514C31.4905 13.3626 31.0376 12.8922 30.5655 12.4414L30.5085 12.3859C30.3332 12.2157 30.1602 12.0432 29.9895 11.8684C31.7574 9.41008 33.2702 6.77799 34.5045 4.01295L34.554 3.90195L34.5885 3.78495C34.752 3.24045 34.938 2.20545 34.278 1.26945C33.594 0.303449 32.5005 0.129449 31.767 0.129449H28.3965C27.6908 0.0972876 26.9929 0.289197 26.4029 0.677712C25.8128 1.06623 25.3608 1.63143 25.1115 2.29245C24.3861 4.01991 23.478 5.66477 22.4025 7.19895V3.24945C22.4025 2.73945 22.3545 1.88445 21.807 1.16445C21.153 0.300449 20.2065 0.129449 19.5495 0.129449H14.2005C13.5025 0.113389 12.8251 0.366391 12.3085 0.836061C11.7919 1.30573 11.4758 1.95609 11.4255 2.65245L11.421 2.71995V2.78745C11.421 3.51495 11.709 4.05195 11.94 4.38945C12.0435 4.54095 12.153 4.67895 12.2235 4.76595L12.2385 4.78545C12.3135 4.87845 12.363 4.93995 12.4125 5.00895C12.5445 5.18595 12.732 5.46195 12.786 6.17295V8.38245C11.7123 6.58443 10.8319 4.67781 10.1595 2.69445L10.1475 2.66145L10.1355 2.62995C9.9525 2.15145 9.66 1.45545 9.0735 0.924449C8.3895 0.301949 7.5795 0.129449 6.843 0.129449H3.423C2.6775 0.129449 1.779 0.30345 1.1085 1.00995C0.45 1.70595 0.375 2.53995 0.375 2.98095V3.18195L0.417 3.37695C1.36395 7.77311 3.31535 11.8905 6.1185 15.4069C7.40006 17.4279 9.13993 19.1184 11.197 20.3412C13.254 21.564 15.5703 22.2847 17.958 22.4449L18.0195 22.4494H18.0825C19.1715 22.4494 20.307 22.3549 21.1605 21.7864C22.311 21.0184 22.4025 19.841 22.4025 19.2529V17.5459C22.698 17.7859 23.064 18.1069 23.5125 18.5389C24.0555 19.0819 24.4875 19.5529 24.858 19.9639L25.056 20.1829C25.344 20.5039 25.6275 20.8204 25.8855 21.0799C26.2095 21.4054 26.61 21.7639 27.111 22.0294C27.6555 22.3159 28.227 22.4464 28.833 22.4464H32.2545C32.976 22.4464 34.0095 22.2754 34.737 21.4324C35.529 20.5144 35.469 19.3879 35.22 18.5794L35.175 18.4339L35.1075 18.2974ZM26.5275 18.4564C26.0626 17.9368 25.5839 17.4296 25.092 16.9354L25.0875 16.9309C23.052 14.9689 22.1025 14.6284 21.4305 14.6284C21.072 14.6284 20.6775 14.6674 20.421 14.9884C20.3055 15.1416 20.2298 15.3209 20.2005 15.5104C20.1643 15.7305 20.1483 15.9535 20.1525 16.1764V19.2529C20.1525 19.6354 20.0895 19.7959 19.9125 19.9129C19.677 20.0704 19.1745 20.1979 18.096 20.1979C16.0473 20.0585 14.061 19.4349 12.3003 18.3783C10.5396 17.3216 9.05478 15.8622 7.968 14.1199L7.956 14.1004L7.941 14.0824C5.32967 10.8322 3.50977 7.01931 2.625 2.94495C2.631 2.74995 2.673 2.63145 2.742 2.55945C2.8125 2.48445 2.985 2.37945 3.423 2.37945H6.843C7.2225 2.37945 7.4205 2.46345 7.563 2.59095C7.722 2.73795 7.863 2.98545 8.031 3.42645C8.871 5.89545 10.005 8.20545 11.0805 9.90195C11.6175 10.7509 12.1455 11.4574 12.6225 11.9569C12.861 12.2059 13.0935 12.4129 13.317 12.5599C13.5315 12.7009 13.776 12.8134 14.028 12.8134C14.16 12.8134 14.3145 12.7984 14.463 12.7339C14.6234 12.6631 14.7554 12.5406 14.838 12.3859C14.9925 12.1039 15.036 11.6884 15.036 11.1439V6.08445C14.9565 4.85745 14.586 4.16595 14.226 3.67545C14.1531 3.57734 14.0781 3.48082 14.001 3.38595L13.9815 3.36195C13.9175 3.28426 13.8565 3.2042 13.7985 3.12195C13.7247 3.03022 13.6802 2.91834 13.671 2.80095C13.6828 2.68175 13.7396 2.57156 13.83 2.49293C13.9203 2.41429 14.0373 2.37316 14.157 2.37795H19.5495C19.8585 2.37795 19.962 2.45295 20.0145 2.52345C20.0895 2.62095 20.1525 2.82345 20.1525 3.24945V10.0414C20.1525 10.8484 20.5245 11.3944 21.0645 11.3944C21.6855 11.3944 22.134 11.0179 22.917 10.2349L22.9305 10.2199L22.9425 10.2064C24.699 8.06487 26.134 5.67881 27.2025 3.12345L27.2085 3.10545C27.2888 2.87968 27.4407 2.68637 27.6411 2.55502C27.8416 2.42366 28.0794 2.36148 28.3185 2.37795H31.7685C32.2365 2.37795 32.3895 2.49795 32.4405 2.56845C32.493 2.64345 32.5305 2.80395 32.4405 3.11895C31.2084 5.87348 29.6852 8.48835 27.897 10.9189L27.885 10.9369C27.7125 11.2024 27.522 11.4964 27.495 11.8324C27.465 12.1954 27.621 12.5239 27.8955 12.8779C28.095 13.1719 28.5075 13.5754 28.926 13.9849L28.965 14.0239C29.403 14.4529 29.8785 14.9179 30.2595 15.3679L30.27 15.3784L30.2805 15.3904C31.4166 16.5237 32.3614 17.8337 33.078 19.2694C33.192 19.6594 33.123 19.8604 33.033 19.9639C32.9295 20.0839 32.697 20.1964 32.256 20.1964H28.833C28.5997 20.2021 28.3689 20.1479 28.1625 20.0389C27.9096 19.8918 27.6801 19.7078 27.4815 19.4929C27.267 19.2784 27.0345 19.0189 26.7495 18.7024L26.529 18.4564H26.5275Z"
+                                                fill="#FFF9F4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a class="footer__col-link" href="#">
+                                    Программа обучения
+                                </a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a class="footer__col-link" href="#">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a class="footer__col-link" href="#">
+                                    Отзывы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <address class="footer__col">
+                        <ul class="footer__contact-list">
+                            <li class="footer__contact-item">
+                                <img src="./img/icons/clock.svg" alt="">
+                                ПН-ПТ 10:00-20:00
+                            </li>
+                            <li class="footer__contact-item">
+                                <img src="./img/icons/location.svg" alt="">
+                                г. Москва, ул. Землянская, 9Б
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="footer__col">
+                        <div class="footer__col-tel">
+                            Бесплатная консультация
+                            <address>
+                                <a class="footer__col-number" href="tel:+79065505555">
+                                    +7 (906) 550-55-55
+                                </a>
+                            </address>
+                        </div>
+                        <div class="footer__col-copy">
+                            <img src="./img/icons/copyright.svg" alt="">
+                            Все права защищены
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="wrapper-modal">
+        <div class="modal-window">
+            <div class="modal__close-btn">
+                <svg class="close__modal" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5" />
+                    <path
+                        d="M6.75781 17.2433L12.0008 12.0003L17.2438 17.2433M17.2438 6.75732L11.9998 12.0003L6.75781 6.75732"
+                        stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <img class="modal__img" src="./img/decor/cupcakes-modal.png" alt="Капкейки">
+            <h3 class="modal__title">
+                Удиви своих близких вкусными капкейками
+            </h3>
+            <p class="modal__text">
+                Оставь свой e-mail, и мы вышлем рецепт на почту
+            </p>
+            <form class="modal__button">
+                <label>
+                    <input class="input" type="email" placeholder="E-mail">
+                    <span class="input__label">
+                        Введите e-mail
+                    </span>
+                </label>
+                <button class="button" type="submit">Получить подарок</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
