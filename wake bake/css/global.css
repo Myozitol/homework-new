@@ -1,0 +1,200 @@
+:root {
+    --general-text: #312C27;
+    --accent-text: #1F1711;
+    --general-bg: #FFF9F4;
+    --accent-bg: #FFE0CB;
+    --accent-color: #FFA55C;
+    --accent-button: #FF9138;
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+
+.body {
+    background: var(--general-bg);
+    color: var(--general-text);
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.5;
+}
+
+.body--fixed {
+    overflow-y: hidden;
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__about {
+    padding: 140px 0;
+}
+
+.main__program {
+    padding-bottom: 140px;
+}
+.main__gallery {
+    padding-bottom: 140px;
+}
+.main__testimonials {
+    padding-bottom: 140px;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
+}
+
+.button {
+    background: var(--accent-color);
+    padding: 3px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.button:hover {
+    background: var(--accent-button);
+}
+
+.wrapper-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0000006a;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+    padding: 15px;
+}
+
+.modal--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-window {
+    position: relative;
+    max-width: 428px;
+    padding: 0 60px 54px;
+    background: var(--general-bg);
+    border-radius: var(--border-radius);
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+}
+
+.close__modal {
+    cursor: pointer;
+}
+
+.close__modal rect,
+.close__modal path {
+    transition: var(--transition);
+}
+
+.modal__close-btn:hover path,
+.modal__close-btn:hover rect {
+    stroke: #B197B2;
+}
+
+.modal__img {
+    margin: -65px 0 15px 13px;
+    max-width: 100%;
+}
+
+.modal__title {
+    font-family: "Gabriola", sans-serif;
+    columns: var(--accent-text);
+    font-size: 42px;
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+
+.modal__button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    position: relative;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    color: #ac907a;
+    border-radius: 100px;
+    border: 1px solid #ac907a;
+    background: var(--general-bg);
+    font-size: 16px;
+    padding: 19px 42px 19px 28px;
+    transition: var(--transition);
+}
+
+.input::placeholder {
+    color: #ac907a;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: var(--transition);
+}
+
+.input:hover {
+    border-color: var(--accent-color);
+}
+
+.input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.input__label {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    font-size: 11px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.input:focus {
+    padding: 26px 42px 12px 28px;
+    ;
+}
+
+.input:focus+span {
+    visibility: visible;
+    opacity: 1;
+}
