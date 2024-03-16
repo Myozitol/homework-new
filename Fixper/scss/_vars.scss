@@ -1,0 +1,17 @@
+$text-color: #343b4e;
+$menu-color: #8B4EE7;
+$button-color: #FF7826;
+$border-radius: 15;
+$transition: all .4s; 
+
+@mixin display-off {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+} 
+
+@mixin display-on {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
