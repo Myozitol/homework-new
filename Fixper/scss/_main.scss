@@ -1,0 +1,83 @@
+.hero__ {
+    &inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        max-width: 590px;
+    }
+    &title {
+        font-size: 60px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+    &text {
+        font-size: 20px;
+        max-width: 410px;
+        opacity: .7;
+        margin-bottom: 60px;
+    }
+    &buttons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    &button {
+        background: $button-color;
+        position: relative;
+        padding: 18px 58px;
+        border-radius: 64px;
+        color: #fff;
+        transition: $transition;
+        &::after {
+            transition: $transition;
+            content: '';
+            position: absolute;
+            top: -6%;
+            left: 20%;
+            background: #fff;
+            opacity: 0;
+            visibility: hidden;
+            width: 140px;
+            height: 70px;
+            border-radius: 50%;
+
+        }
+        &:hover::after {
+            opacity: .15;
+            visibility: visible;
+        }
+    }
+    &tel {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $button-color;
+        border-radius: 50%;
+        transition: $transition;
+        path {
+            transition: $transition;
+        }
+        &:hover {
+            background: $button-color;
+        }
+        &:hover path {
+            fill: #fff;
+        }
+    }
+    &img {
+        max-width: 839px;
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+        }
+
+}
