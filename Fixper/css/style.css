@@ -164,7 +164,10 @@ address {
 }
 
 .wrapper-modal,
-.wrapper-modal-call {
+.wrapper-modal-call,
+.wrapper-modal-call-send,
+.wrapper-modal-call-tel,
+.wrapper-modal-call-tel-send {
   position: fixed;
   inset: 0;
   z-index: 10;
@@ -207,7 +210,8 @@ address {
   text-align: center;
 }
 
-.modal-call-window {
+.modal-call-window,
+.modal-call-tel-window {
   position: relative;
   max-width: 490px;
   width: 100%;
@@ -223,13 +227,38 @@ address {
   transition: all 0.4s;
 }
 
-.modal-call__close-btn {
-  cursor: pointer;
+.modal-call-send-window,
+.modal-call--tel-send-window {
+  position: relative;
+  max-width: 490px;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 50px;
+  background: #fff;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.modal-call-send-window img,
+.modal-call--tel-send-window img {
+  margin-bottom: 35px;
+}
+.modal-call-send-text,
+.modal-call--tel-send-text {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.7;
+  max-width: 380px;
 }
 
-.modal-call-title {
-  font-size: 30px;
-  margin-bottom: 30px;
+.modal-call__close-btn,
+.modal-call-send__close-btn,
+.modal-tel__close-btn {
+  cursor: pointer;
 }
 
 .contact__form {
@@ -298,6 +327,12 @@ address {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+.modal-call-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .nav-modal {
@@ -407,7 +442,9 @@ address {
 }
 
 .modal__close-btn,
-.modal-call__close-btn {
+.modal-call__close-btn,
+.modal-call-send__close-btn,
+.modal-tel__close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1131,8 +1168,20 @@ address {
   }
 }
 @media (max-width: 400px) {
-  .modal-window {
+  .modal-window, .modal-call-window, .modal-call-send-window, .modal-call-tel-window, .modal-call--tel-send-window {
     padding: 30px 25px 50px;
+  }
+  .modal-call-title {
+    font-size: 20px;
+  }
+  .modal-call-send-text {
+    font-size: 16px;
+  }
+  .contact__label span {
+    font-size: 16px;
+  }
+  .contact-doc {
+    font-size: 12px;
   }
   .footer__choice {
     left: 7vw;

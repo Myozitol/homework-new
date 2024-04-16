@@ -45,7 +45,7 @@ if (event.target.classList.contains('js-dropdown-option')) {
     function closeModal(e) {
         const target = e.target
 
-        if (target.closest('.modal__close-btn') || target.classList.contains('wrapper-modal')) {
+        if (target.closest('.modal__close-btn') || target.classList.contains('wrapper-modal') || target.classList.contains('burger-tel')) {
             body.classList.remove('body--fixed')
             modal.classList.remove('modal--open')
             modalTransform.classList.remove('modal-window--transform')
@@ -94,13 +94,118 @@ mainCityModal.addEventListener('click', () =>{
     function closeModalCall(e) {
         const target = e.target
 
-        if (target.closest('.modal-call__close-btn') || target.classList.contains('wrapper-modal-call')) {
+        if (target.closest('.modal-call__close-btn') || target.classList.contains('wrapper-modal-call') || target.classList.contains('contact-button')) {
             body.classList.remove('body--fixed')
             modalCall.classList.remove('modal--open')
             modalCallTransform.classList.remove('modal-window--transform')
         }
 
 }
+    // Маска для телефона
+    const telInputs = document.querySelectorAll('input[type="tel"]')
+    const im = new Inputmask('+7 (999) 999-99-99')
+    im.mask(telInputs)
+
+    
+    // Модалка заявка принята =====================================
+    const sendButton = document.querySelector('.contact-button')
+    const modalCallSend = document.querySelector('.wrapper-modal-call-send')
+    const modalCallSendTransform = document.querySelector('.modal-call-send-window')
+
+    sendButton.addEventListener('click', openModalCallSend)
+    modalCallSend.addEventListener('click', closeModalCallSend)
+
+    function openModalCallSend() {
+        body.classList.toggle('body--fixed')
+        modalCallSend.classList.toggle('modal--open')
+        modalCallSendTransform.classList.toggle('modal-window--transform')
+    }
+
+    function closeModalCallSend(e) {
+        const target = e.target
+
+        if (target.closest('.modal-call-send__close-btn') || target.classList.contains('wrapper-modal-call-send')) {
+            body.classList.remove('body--fixed')
+            modalCallSend.classList.remove('modal--open')
+            modalCallSendTransform.classList.remove('modal-window--transform')
+        }
+    }
+
+    // Модалка заказать звонок =====================================
+
+    const telButton = document.querySelector('.hero__tel')
+    const modalTel = document.querySelector('.wrapper-modal-call-tel')
+    const modalTelTransform = document.querySelector('.modal-call-tel-window')
+    const headerTel = document.querySelector('.header-tel')
+    const headerTelMob = document.querySelector('.header__mobile-contact')
+    const burgerTel = document.querySelector('.burger-tel')
+    const footerTel = document.querySelector('.footer-tel')
+
+    telButton.addEventListener('click', openModalTel)
+
+    headerTel.addEventListener('click', (e) => {
+        e.preventDefault
+        openModalTel()
+    }
+    ) 
+    headerTelMob.addEventListener('click', (e) => {
+        e.preventDefault
+        openModalTel()
+    }
+    ) 
+    burgerTel.addEventListener('click', (e) => {
+        e.preventDefault
+        openModalTel()
+    }
+    ) 
+    footerTel.addEventListener('click', (e) => {
+        e.preventDefault
+        openModalTel()
+    }
+    ) 
+    
+    modalTel.addEventListener('click', closeModalTel)
+
+    function openModalTel() {
+        body.classList.toggle('body--fixed')
+        modalTel.classList.toggle('modal--open')
+        modalTelTransform.classList.toggle('modal-window--transform')
+    }
+
+    function closeModalTel(e) {
+        const target = e.target
+
+        if (target.closest('.modal-tel__close-btn') || target.classList.contains('wrapper-modal-call-tel') || target.classList.contains('tel-button')) {
+            body.classList.remove('body--fixed')
+            modalTel.classList.remove('modal--open')
+            modalTelTransform.classList.remove('modal-window--transform')
+        }
+    }
+
+        // Модалка перезвоним =====================================
+        const sendTelButton = document.querySelector('.tel-button')
+        const modalTelSend = document.querySelector('.wrapper-modal-call-tel-send')
+        const modalTelSendTransform = document.querySelector('.modal-call--tel-send-window')
+    
+        sendTelButton.addEventListener('click', openModalTelSend)
+        modalTelSend.addEventListener('click', closeModalTelSend)
+    
+        function openModalTelSend() {
+            body.classList.toggle('body--fixed')
+            modalTelSend.classList.toggle('modal--open')
+            modalTelSendTransform.classList.toggle('modal-window--transform')
+        }
+    
+        function closeModalTelSend(e) {
+            const target = e.target
+    
+            if (target.closest('.modal-call-send__close-btn') || target.classList.contains('wrapper-modal-call-tel-send')) {
+                body.classList.remove('body--fixed')
+                modalTelSend.classList.remove('modal--open')
+                modalTelSendTransform.classList.remove('modal-window--transform')
+            }
+        }
+
 
 }) ();
 

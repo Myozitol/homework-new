@@ -82,7 +82,10 @@
 }
 
 .wrapper-modal,
-.wrapper-modal-call {
+.wrapper-modal-call,
+.wrapper-modal-call-send,
+.wrapper-modal-call-tel,
+.wrapper-modal-call-tel-send {
     position: fixed;
     inset: 0;
     z-index: 10;
@@ -116,7 +119,8 @@
     text-align: center;
 }
 
-.modal-call-window {
+.modal-call-window,
+.modal-call-tel-window {
     position: relative;
     max-width: 490px;
     width: 100%;
@@ -128,12 +132,38 @@
     opacity: 0;
     transition: $transition;
 }
-.modal-call__close-btn {
-    cursor: pointer;
+
+.modal-call-send,
+.modal-call--tel-send {
+    &-window {
+        position: relative;
+        max-width: 490px;
+        width: 100%;
+        transform: translateY(-100%);
+        padding: 50px;
+        background: #fff;
+        border-radius: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: $transition;
+
+        img {
+            margin-bottom: 35px;
+        }
+    }
+
+    &-text {
+        font-size: 18px;
+        font-weight: 400;
+        opacity: .7;
+        max-width: 380px;
+    }
 }
-.modal-call-title {
-    font-size: 30px;
-    margin-bottom: 30px;
+
+.modal-call__close-btn,
+.modal-call-send__close-btn,
+.modal-tel__close-btn {
+    cursor: pointer;
 }
 
 .contact__form {
@@ -165,16 +195,19 @@
 .contact-doc {
     opacity: .5;
     margin-bottom: 35px;
+
     a {
         text-decoration: underline;
     }
 }
+
 .contact-button {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 175px;
     text-align: center;
+
     &::after {
         top: -10%;
         left: 16%;
@@ -186,6 +219,12 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 40px;
+}
+
+.modal-call-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
 .nav-modal {
@@ -273,7 +312,9 @@
 }
 
 .modal__close-btn,
-.modal-call__close-btn {
+.modal-call__close-btn,
+.modal-call-send__close-btn,
+.modal-tel__close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -293,6 +334,8 @@
 .modal__close-btn:hover rect {
     stroke: #B197B2;
 }
+
+
 
 /*=========================================================*/
 

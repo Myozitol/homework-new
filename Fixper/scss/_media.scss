@@ -25,18 +25,22 @@
 
     .nav {
         display: none;
+
         &__item {
             margin-bottom: 20px;
         }
     }
+
     .footer {
         &__head {
             grid-template-columns: .8fr 1fr 1fr;
             font-size: 20px;
         }
+
         &__logo {
             grid-column: 1/-1;
         }
+
         &__basic-nav {
             ul {
                 display: flex;
@@ -44,26 +48,30 @@
                 gap: 12px;
             }
         }
-        &__basic-pay {    
+
+        &__basic-pay {
             h5 {
                 text-align: center;
             }
+
             div {
                 justify-content: center;
             }
-        } 
+        }
+
         &__app {
             ul {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
             }
-    
+
         }
+
         &__copy {
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-        }        
+        }
     }
 }
 
@@ -75,16 +83,18 @@
             grid-template-columns: 1fr 1fr;
             font-size: 20px;
             margin-bottom: 50px;
-            &-city, 
-            &-tel
-            {
+
+            &-city,
+            &-tel {
                 justify-self: end;
             }
+
             &-mail {
                 justify-self: baseline;
             }
-            
+
         }
+
         &__choice {
             left: -35%;
         }
@@ -93,23 +103,27 @@
             display: grid;
             grid-template-columns: .7fr 1fr;
             gap: 20px 0;
+
             &-pay {
                 justify-self: end;
             }
         }
+
         &__logo {
             grid-column: 1/2;
-        }      
+        }
+
         &__app {
             grid-column: 1/-1;
             justify-self: center;
+
             ul {
                 display: flex;
                 flex-direction: row;
             }
-    
+
         }
-    }    
+    }
 }
 
 @media (max-width:600px) {
@@ -118,39 +132,48 @@
             grid-template-columns: 1fr;
             gap: 20px;
             position: relative;
+
             &-city,
             &-mail,
             &-tel {
                 justify-self: center;
             }
+
             &-city {
                 position: static;
             }
         }
+
         &__choice {
             left: 22vw;
             top: 55%;
             width: 280px;
             text-align: center;
         }
+
         &__logo {
             justify-self: center;
             margin-bottom: 20px;
         }
+
         &__basic {
             grid-template-columns: 1fr;
             justify-items: center;
             margin-bottom: 50px;
             gap: 50px;
+
             h5 {
                 font-size: 20px;
             }
+
             &-nav {
                 text-align: center;
                 position: relative;
+
                 h5 {
                     margin-bottom: 15px;
                 }
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -160,6 +183,7 @@
                     right: -200%;
                     top: -10%;
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -170,27 +194,35 @@
                     bottom: -10%;
                 }
             }
+
             &__copy-doc {
                 display: block;
             }
+
             &-pay {
                 justify-self: center;
+
                 li {
                     width: 100%;
                 }
+
                 h5 {
                     margin-bottom: 15px;
                 }
             }
         }
+
         &__app {
             position: relative;
+
             ul {
                 gap: 10px;
+
                 img {
                     width: 100%;
                 }
             }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -200,6 +232,7 @@
                 left: -33%;
                 top: -52%;
             }
+
             &::after {
                 content: '';
                 position: absolute;
@@ -210,22 +243,49 @@
                 bottom: -52%;
             }
         }
-        &__copy{
+
+        &__copy {
             grid-template-columns: 1fr;
+
             &-doc {
-            display: none;
+                display: none;
+            }
+
+            p {
+                justify-self: start;
+            }
         }
-        p {
-            justify-self: start;
-        }
-    }
     }
 }
 
 @media (max-width:400px) {
-    .modal-window {
-        padding: 30px 25px 50px;
+    .modal {
+        &-window,
+        &-call-window,
+        &-call-send-window,
+        &-call-tel-window,
+        &-call--tel-send-window {
+            padding: 30px 25px 50px;
+        }
+
+        &-call-title {
+            font-size: 20px;
+        }
+
+        &-call-send-text {
+            font-size: 16px;
+        }
     }
+
+    .contact__label {
+        span {
+            font-size: 16px;
+        }
+    }
+    .contact-doc {
+        font-size: 12px;
+    }
+
     .footer {
         &__choice {
             left: 7vw;
