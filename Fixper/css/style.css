@@ -127,6 +127,34 @@ address {
   height: 100%;
 }
 
+.button {
+  background: #FF7826;
+  position: relative;
+  padding: 18px 58px;
+  border-radius: 64px;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.button::after {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  content: "";
+  position: absolute;
+  top: -6%;
+  left: 20%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  width: 140px;
+  height: 70px;
+  border-radius: 50%;
+}
+.button:hover::after {
+  opacity: 0.15;
+  visibility: visible;
+}
+
 .header__main {
   margin-bottom: 45px;
 }
@@ -135,10 +163,11 @@ address {
   margin-bottom: 180px;
 }
 
-.wrapper-modal {
+.wrapper-modal,
+.wrapper-modal-call {
   position: fixed;
   inset: 0;
-  z-index: 2;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +205,93 @@ address {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   text-align: center;
+}
+
+.modal-call-window {
+  position: relative;
+  max-width: 490px;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 50px;
+  background: #fff;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.modal-call__close-btn {
+  cursor: pointer;
+}
+
+.modal-call-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.contact__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.contact__label span {
+  font-size: 18px;
+}
+
+.field__input {
+  border: 1px solid rgba(52, 59, 78, 0.1490196078);
+  border-radius: 5px;
+  height: 70px;
+  padding: 23px 25px;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.contact-doc {
+  opacity: 0.5;
+  margin-bottom: 35px;
+}
+.contact-doc a {
+  text-decoration: underline;
+}
+
+.contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 175px;
+  text-align: center;
+}
+.contact-button::after {
+  top: -10%;
+  left: 16%;
+  width: 120px;
 }
 
 .modal__title {
@@ -290,7 +406,8 @@ address {
   opacity: 1;
 }
 
-.modal__close-btn {
+.modal__close-btn,
+.modal-call__close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -531,33 +648,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.hero__button {
-  background: #FF7826;
-  position: relative;
-  padding: 18px 58px;
-  border-radius: 64px;
-  color: #fff;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.hero__button::after {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  content: "";
-  position: absolute;
-  top: -6%;
-  left: 20%;
-  background: #fff;
-  opacity: 0;
-  visibility: hidden;
-  width: 140px;
-  height: 70px;
-  border-radius: 50%;
-}
-.hero__button:hover::after {
-  opacity: 0.15;
-  visibility: visible;
 }
 .hero__tel {
   width: 60px;

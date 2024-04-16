@@ -26,32 +26,6 @@
         gap: 20px;
         align-items: center;
     }
-    &button {
-        background: $button-color;
-        position: relative;
-        padding: 18px 58px;
-        border-radius: 64px;
-        color: #fff;
-        transition: $transition;
-        &::after {
-            transition: $transition;
-            content: '';
-            position: absolute;
-            top: -6%;
-            left: 20%;
-            background: #fff;
-            opacity: 0;
-            visibility: hidden;
-            width: 140px;
-            height: 70px;
-            border-radius: 50%;
-
-        }
-        &:hover::after {
-            opacity: .15;
-            visibility: visible;
-        }
-    }
     &tel {
         width: 60px;
         height: 60px;

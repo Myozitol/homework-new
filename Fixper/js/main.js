@@ -76,8 +76,34 @@ mainCityModal.addEventListener('click', () =>{
         
     })
 
+    // Модалка оставить заявку =====================================
+
+    const heroButton = document.querySelector('.hero__button')
+    const modalCall = document.querySelector('.wrapper-modal-call')
+    const modalCallTransform = document.querySelector('.modal-call-window')
+
+    heroButton.addEventListener('click', openModalCall)
+    modalCall.addEventListener('click', closeModalCall)
+
+    function openModalCall() {
+        body.classList.toggle('body--fixed')
+        modalCall.classList.toggle('modal--open')
+        modalCallTransform.classList.toggle('modal-window--transform')
+    }
+
+    function closeModalCall(e) {
+        const target = e.target
+
+        if (target.closest('.modal-call__close-btn') || target.classList.contains('wrapper-modal-call')) {
+            body.classList.remove('body--fixed')
+            modalCall.classList.remove('modal--open')
+            modalCallTransform.classList.remove('modal-window--transform')
+        }
+
+}
 
 }) ();
+
 
 
 // 
