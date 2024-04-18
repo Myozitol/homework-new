@@ -563,6 +563,7 @@ address {
   border-radius: 10px;
   padding: 20px 50px 20px 20px;
   width: 245px;
+  background: #fff;
 }
 .header .is-opened .dropdown-options-container {
   pointer-events: all;
@@ -650,7 +651,7 @@ address {
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.8fr;
 }
 .hero__content {
   display: -webkit-box;
@@ -976,6 +977,13 @@ address {
     display: -ms-flexbox;
     display: flex;
   }
+  .hero__title {
+    font-size: 40px;
+    max-width: 385px;
+  }
+  .hero__text {
+    font-size: 18px;
+  }
   .nav {
     display: none;
   }
@@ -1020,6 +1028,36 @@ address {
   .footer__copy {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .hero__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__title {
+    text-align: center;
+    max-width: none;
+  }
+  .hero__text {
+    text-align: center;
+  }
+  .hero__img {
+    max-width: 600px;
   }
 }
 @media (max-width: 800px) {
@@ -1167,7 +1205,27 @@ address {
     justify-self: start;
   }
 }
+@media (max-width: 500px) {
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .hero__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 400px) {
+  .hero__inner {
+    gap: 40px;
+  }
+  .hero__tel {
+    display: none;
+  }
+  .hero__button {
+    font-size: 12px;
+    padding: 18px 31px;
+  }
   .modal-window, .modal-call-window, .modal-call-send-window, .modal-call-tel-window, .modal-call--tel-send-window {
     padding: 30px 25px 50px;
   }
