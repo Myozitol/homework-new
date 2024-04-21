@@ -1,0 +1,237 @@
+.hero__ {
+    &inner {
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+    }
+
+    &content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        max-width: 590px;
+    }
+
+    &title {
+        font-size: 60px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+    &text {
+        font-size: 20px;
+        max-width: 410px;
+        opacity: .7;
+        margin-bottom: 60px;
+    }
+
+    &buttons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &tel {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $button-color;
+        border-radius: 50%;
+        transition: $transition;
+
+        path {
+            transition: $transition;
+        }
+
+        &:hover {
+            background: $button-color;
+        }
+
+        &:hover path {
+            fill: #fff;
+        }
+    }
+
+    &img {
+        max-width: 839px;
+        position: relative;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.quality__ {
+    &inner {
+        display: flex;
+        background: #fbf8ff;
+        border-radius: 50px;
+        padding: 30px;
+    }
+
+    &img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+    }
+
+    &title {
+        font-size: 50px;
+        line-height: 1.3;
+        max-width: 436px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: url('../img/icons/star-y.svg');
+            position: absolute;
+            max-width: 30px;
+            top: -20%;
+            right: -10%;
+
+        }
+    }
+
+    &text {
+        max-width: 436px;
+        font-size: 18px;
+    }
+
+}
+
+.works__ {
+    &inner {
+        padding: 20px;
+    }
+
+    &top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &title {
+        font-size: 50px;
+        line-height: 1.3;
+        margin-bottom: 80px;
+    }
+
+    &button {
+        display: none;
+        border-radius: 64px;
+        padding: 14px 30px;
+        background: #4db45e;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        height: 100%;
+        &-mobile {
+            display: none;
+            border-radius: 64px;
+            padding: 18px 30px;
+            background: #4db45e;
+            color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            height: 100%;
+            max-width: 160px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+
+    &list {
+        display: flex;
+        gap: 103px;
+    }
+
+    &item {
+        img {
+            width: 100%;
+            max-width: 308px;
+        }
+
+        &__img {
+            border: 1px solid #343b4e21;
+            border-radius: 15px;
+            padding: 32px 57px 39px;
+            max-width: 422px;
+            height: 291px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 18px;
+            opacity: .7;
+            max-width: 423px;
+        }
+        &__step {
+            font-size: 18px;
+        }
+    }
+    &one {
+        background: #ffa3b3;
+        padding: 16px 30px;
+        color: #fff;
+        border-radius: 73px;
+        margin-bottom: 34px;
+        position: relative;
+        max-width: 113px;
+
+        &::after {
+            content: url('../img/Line.svg');
+            top: 20%;
+            right: -365%;
+            position: absolute;
+        }
+    }
+
+    &two {
+        padding: 16px 30px;
+        color: #fff;
+        border-radius: 73px;
+        margin-bottom: 34px;
+        position: relative;
+        max-width: 113px;
+        background: #f9c758;
+
+        &::after {
+            content: url('../img/Line.svg');
+            top: 20%;
+            right: -365%;
+            position: absolute;
+        }
+    }
+
+    &three {
+        background: #fd856d;
+        padding: 16px 30px;
+        color: #fff;
+        border-radius: 73px;
+        margin-bottom: 34px;
+        position: relative;
+        max-width: 113px;
+    }
+
+}
