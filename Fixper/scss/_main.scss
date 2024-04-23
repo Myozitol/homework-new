@@ -137,6 +137,7 @@
         font-weight: 500;
         font-size: 14px;
         height: 100%;
+
         &-mobile {
             display: none;
             border-radius: 64px;
@@ -186,10 +187,12 @@
             opacity: .7;
             max-width: 423px;
         }
+
         &__step {
             font-size: 18px;
         }
     }
+
     &one {
         background: #ffa3b3;
         padding: 16px 30px;
@@ -234,4 +237,39 @@
         max-width: 113px;
     }
 
+}
+
+.masters__ {
+    &inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 255px;
+        background: #f5efff;
+        border-radius: 50px;
+        min-height: 819px;
+    }
+
+    &title {
+        font-size: 50px;
+        line-height: 1.3;
+        max-width: 515px;
+        margin-bottom: 30px;
+    }
+    &text {
+        max-width: 535px;
+        opacity: 0.7;
+        font-size: 18px;
+    }
+
+    &animate {
+        display: flex;
+        gap: 41px;
+    }
+
+    &item {
+        background: #fff;
+        border-radius: 30px;
+        padding: 50px 40px;
+    }
 }
