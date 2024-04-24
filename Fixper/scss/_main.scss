@@ -244,10 +244,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 255px;
+        gap: 245px;
         background: #f5efff;
         border-radius: 50px;
-        min-height: 819px;
+        position: relative;
+        &::after {
+            content: url('../img/workers/37+.png');
+            position: absolute;
+            bottom: 1%;
+            right: 1%;
+            z-index: 1;
+        }
     }
 
     &title {
@@ -255,21 +262,62 @@
         line-height: 1.3;
         max-width: 515px;
         margin-bottom: 30px;
+        position: relative;
+        &::after {
+            content: url('../img/icons/star-y.svg');
+            position: absolute;
+            top: 35%;
+            right: 0;
+        }
     }
+
     &text {
         max-width: 535px;
         opacity: 0.7;
         font-size: 18px;
     }
+    &slider {
+        display: flex;
+        gap: 40px;
+        position: relative;
+    }
 
     &animate {
         display: flex;
-        gap: 41px;
+        gap: 4px;
     }
 
     &item {
         background: #fff;
         border-radius: 30px;
-        padding: 50px 40px;
+        padding: 40px;
+        margin-top: 40px;
+        &__element {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            } 
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &img {
+        margin-bottom: 40px;
+    }
+
+    &name {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    &subname {
+        display: inline-block;
+        opacity: .5;
+        margin-bottom: 27px;
     }
 }

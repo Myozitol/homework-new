@@ -210,6 +210,30 @@ mainCityModal.addEventListener('click', () =>{
             }
         }
 
+        // Слайдер работников =====================================
+        new Swiper('.masters__animate', {
+            // // Optional parameters
+            loop: true,
+            direction: 'vertical',
+            slidesPerView: 1.45,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+
+        new Swiper('.masters__animate__second', {
+            // // Optional parameters
+            loop: true,
+            direction: 'vertical',
+            slidesPerView: 1.45,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                reverseDirection:true,
+            },
+        });
 
 }) ();
 

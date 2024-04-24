@@ -30,6 +30,18 @@
     overflow-y: hidden;
 }
 
+.swiper {
+    max-width: 330px;
+    max-height: 819px;
+    margin: 0 0;
+
+    &-second {
+        max-width: 330px;
+        max-height: 819px;
+        margin: 0 0;
+    }
+}
+
 .container-min {
     max-width: 1790px;
     margin: 0 auto;
