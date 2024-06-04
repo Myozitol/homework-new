@@ -217,8 +217,9 @@ mainCityModal.addEventListener('click', () =>{
             direction: 'vertical',
             slidesPerView: 1.45,
             spaceBetween: 0,
+            speed: 3000,
             autoplay: {
-                delay: 3000,
+                delay: 1000,
             },
         });
 
@@ -228,9 +229,10 @@ mainCityModal.addEventListener('click', () =>{
             direction: 'vertical',
             slidesPerView: 1.45,
             spaceBetween: 0,
+            speed: 3000,
             centeredSlides: true,
             autoplay: {
-                delay: 3000,
+                delay: 1000,
                 reverseDirection:true,
             },
         });

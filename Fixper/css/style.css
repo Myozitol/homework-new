@@ -913,6 +913,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   gap: 245px;
+  padding: 0 60px;
   background: #f5efff;
   border-radius: 50px;
   position: relative;
@@ -946,6 +947,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   gap: 40px;
   position: relative;
 }
@@ -1220,6 +1223,19 @@ address {
 }
 
 /*=========================================================*/
+@media (max-width: 1600px) {
+  .masters__inner {
+    gap: 100px;
+  }
+}
+@media (max-width: 1500px) {
+  .masters__content {
+    max-width: 435px;
+  }
+  .masters__title {
+    font-size: 35px;
+  }
+}
 @media (max-width: 1300px) {
   .header__contact {
     -webkit-box-orient: vertical;
@@ -1246,6 +1262,54 @@ address {
     -webkit-transform: translateX(-15%);
         -ms-transform: translateX(-15%);
             transform: translateX(-15%);
+  }
+  .masters__inner::after {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .masters__title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .masters__title::after {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .masters__text {
+    font-size: 18px;
+  }
+  .masters__img {
+    max-width: 130px;
+    margin-bottom: 20px;
+  }
+  .masters__img img {
+    width: 100%;
+  }
+  .masters__name {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .masters__subname {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .masters__item {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .masters__item__element {
+    margin-bottom: 5px;
+  }
+  .masters__item__element :last-child {
+    margin-bottom: 0px;
+  }
+  .masters__item__element span {
+    font-size: 10px;
+  }
+  .swiper {
+    max-height: 459px;
   }
 }
 @media (max-width: 1100px) {
@@ -1351,6 +1415,19 @@ address {
   }
   .nav__item {
     margin-bottom: 20px;
+  }
+  .masters__inner {
+    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 20px;
+  }
+  .masters__content {
+    max-width: 335px;
+  }
+  .masters__text {
+    font-size: 16px;
   }
   .footer__head {
     grid-template-columns: 0.8fr 1fr 1fr;

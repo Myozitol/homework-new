@@ -245,6 +245,7 @@
         justify-content: center;
         align-items: center;
         gap: 245px;
+        padding: 0 60px;
         background: #f5efff;
         border-radius: 50px;
         position: relative;
@@ -278,6 +279,7 @@
     }
     &slider {
         display: flex;
+        flex-shrink: 1;
         gap: 40px;
         position: relative;
     }
