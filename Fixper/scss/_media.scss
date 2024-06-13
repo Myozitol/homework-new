@@ -80,6 +80,7 @@
         &item {
             padding: 20px;
             margin-top: 20px;
+            border-radius: 10px;
         &__element {
             margin-bottom: 5px;
             :last-child {
@@ -289,6 +290,11 @@
             max-width: 500px;
         }
     }
+    .masters__ {
+        &animate__second {
+            display: none;
+        }
+    }
 }
 
 @media (max-width:800px) {
@@ -341,6 +347,12 @@
 }
 
 @media (max-width:700px) {
+    .container-min {
+        padding: 0;
+    }
+    .quality__inner {
+        border-radius: 0;
+    }
     .works__ {
         &top {
             justify-content: center;
@@ -370,6 +382,20 @@
                 text-align: center;
             }
         }
+    }
+    .masters__ {
+        &inner {
+            flex-direction: column;
+            border-radius: 0;
+            padding: 60px 20px 125px;
+            overflow: hidden;
+        }
+        &item {
+            max-width: 180px;
+        }
+    }
+    .swiper {
+        max-width: 700px;
     }
 }
 

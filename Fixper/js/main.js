@@ -214,13 +214,21 @@ mainCityModal.addEventListener('click', () =>{
         new Swiper('.masters__animate', {
             // // Optional parameters
             loop: true,
-            direction: 'vertical',
-            slidesPerView: 1.45,
-            spaceBetween: 0,
-            speed: 3000,
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 20,
+            speed: 5000,
+            centeredSlides: true,
             autoplay: {
-                delay: 1000,
+                delay: 0,
             },
+            breakpoints: {
+                700: {
+                direction: 'vertical',
+                spaceBetween: 0,
+                slidesPerView: 1.45,
+                }
+            }
         });
 
         new Swiper('.masters__animate__second', {
@@ -229,10 +237,10 @@ mainCityModal.addEventListener('click', () =>{
             direction: 'vertical',
             slidesPerView: 1.45,
             spaceBetween: 0,
-            speed: 3000,
+            speed: 5000,
             centeredSlides: true,
             autoplay: {
-                delay: 1000,
+                delay: 1,
                 reverseDirection:true,
             },
         });
