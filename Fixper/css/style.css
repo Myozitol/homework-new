@@ -993,6 +993,9 @@ address {
   opacity: 0.5;
   margin-bottom: 27px;
 }
+.masters__mobile__animate {
+  display: none;
+}
 
 .footer__inner {
   display: grid;
@@ -1609,12 +1612,36 @@ address {
     border-radius: 0;
     padding: 60px 20px 125px;
     overflow: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .masters__inner::after {
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .masters__title {
+    text-align: center;
+  }
+  .masters__text {
+    font-size: 15px;
+    text-align: center;
   }
   .masters__item {
     max-width: 180px;
   }
+  .masters__animate {
+    display: none;
+  }
+  .masters__mobile__animate {
+    display: block;
+  }
   .swiper {
-    max-width: 700px;
+    max-width: 690px;
   }
 }
 @media (max-width: 600px) {

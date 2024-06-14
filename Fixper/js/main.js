@@ -214,22 +214,19 @@ mainCityModal.addEventListener('click', () =>{
         new Swiper('.masters__animate', {
             // // Optional parameters
             loop: true,
-            direction: 'horizontal',
-            slidesPerView: 3,
-            spaceBetween: 20,
-            speed: 5000,
+            direction: 'vertical',
+            slidesPerView: 1.45,
+            spaceBetween: 0,
+            speed: 6000,
             centeredSlides: true,
             autoplay: {
-                delay: 0,
+                delay: 10,
             },
-            breakpoints: {
-                700: {
-                direction: 'vertical',
-                spaceBetween: 0,
-                slidesPerView: 1.45,
-                }
+            breakpoints: { 768:{
+                centeredSlides: false
             }
-        });
+            },
+            });
 
         new Swiper('.masters__animate__second', {
             // // Optional parameters
@@ -237,11 +234,23 @@ mainCityModal.addEventListener('click', () =>{
             direction: 'vertical',
             slidesPerView: 1.45,
             spaceBetween: 0,
-            speed: 5000,
+            speed: 6000,
+            centeredSlides: true,
+            autoplay: {
+                delay: 10,
+                reverseDirection:true,
+            },
+        });
+        new Swiper('.masters__mobile__animate', {
+            // // Optional parameters
+            loop: true,
+            direction: 'horizontal',
+            slidesPerView: 3.55,
+            spaceBetween: 20,
+            speed: 6000,
             centeredSlides: true,
             autoplay: {
                 delay: 1,
-                reverseDirection:true,
             },
         });
 
