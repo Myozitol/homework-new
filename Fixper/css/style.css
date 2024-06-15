@@ -173,7 +173,8 @@ address {
 .hero__main,
 .quality__main,
 .works__main,
-.masters__main {
+.masters__main,
+.price__main {
   margin-bottom: 180px;
 }
 
@@ -212,7 +213,6 @@ address {
   max-width: 500px;
   width: 100%;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 30px 50px 50px;
   background: #fff;
@@ -230,7 +230,6 @@ address {
   max-width: 490px;
   width: 100%;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 50px;
   background: #fff;
@@ -247,7 +246,6 @@ address {
   max-width: 490px;
   width: 100%;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 50px;
   background: #fff;
@@ -389,14 +387,12 @@ address {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-30%);
-      -ms-transform: translateY(-30%);
           transform: translateY(-30%);
 }
 .modal-city__ul--open {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 .modal-city li {
@@ -433,7 +429,6 @@ address {
 }
 .main-city-icon--rotate {
   -webkit-transform: rotateZ(180deg);
-      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 
@@ -449,7 +444,6 @@ address {
 
 .modal-window--transform {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -566,7 +560,6 @@ address {
   left: -50%;
   top: 170%;
   -webkit-transform: translateY(-40px);
-      -ms-transform: translateY(-40px);
           transform: translateY(-40px);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -583,7 +576,6 @@ address {
   pointer-events: all;
   opacity: 1;
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
   z-index: 5;
 }
@@ -610,7 +602,6 @@ address {
 }
 .header .is-opened .dropdown-icon {
   -webkit-transform: rotateZ(180deg);
-      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 
@@ -997,6 +988,36 @@ address {
   display: none;
 }
 
+.price__wrapper {
+  border: 1px solid rgba(52, 59, 78, 0.2);
+  border-radius: 15px;
+  padding: 73px 120px;
+}
+.price__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price__content {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 65px;
+  width: 100%;
+}
+.price__table__header, .price__table, .price__table__one {
+  display: grid;
+  grid-template-columns: 1.5fr 0.4fr 0.4fr;
+}
+.price__table__header li, .price__table li, .price__table__one li {
+  max-width: 460px;
+}
+
 .footer__inner {
   display: grid;
   grid-template-columns: 1fr;
@@ -1046,7 +1067,6 @@ address {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-30%);
-      -ms-transform: translateY(-30%);
           transform: translateY(-30%);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1068,7 +1088,6 @@ address {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 .footer__head-mail span {
@@ -1080,7 +1099,6 @@ address {
 }
 .footer .nav-check-icon--rotate {
   -webkit-transform: rotateZ(180deg);
-      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 .footer .footer__head-mail {
@@ -1263,12 +1281,10 @@ address {
   .works__one::after, .works__two::after {
     scale: 0.8;
     -webkit-transform: translateX(-15%);
-        -ms-transform: translateX(-15%);
             transform: translateX(-15%);
   }
   .masters__inner::after {
     -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
   .masters__title {
@@ -1277,7 +1293,6 @@ address {
   }
   .masters__title::after {
     -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
   .masters__text {
@@ -1343,7 +1358,6 @@ address {
   }
   .quality__title::after {
     -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   .quality__text {
@@ -1377,7 +1391,6 @@ address {
     top: 18.5%;
     left: 46%;
     -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
             transform: scale(1.15);
   }
   .works__item {
@@ -1621,7 +1634,6 @@ address {
   }
   .masters__inner::after {
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
             transform: scale(0.6);
   }
   .masters__title {

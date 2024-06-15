@@ -326,3 +326,30 @@
         display: none;
     }
 }
+.price__ {
+    &wrapper {
+        border: 1px solid #343b4e33;
+        border-radius: 15px;
+        padding: 73px 120px;
+    }
+    &header {
+        display: flex;
+    }
+    &content {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        width: 100%;
+    }
+    &table__header,
+    &table,
+    &table__one{
+        display: grid;
+        grid-template-columns: 1.5fr .4fr .4fr;
+        li {
+            max-width: 460px;
+        }
+    }
+
+}
