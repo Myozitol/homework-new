@@ -213,6 +213,7 @@ address {
   max-width: 500px;
   width: 100%;
   -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 30px 50px 50px;
   background: #fff;
@@ -230,6 +231,7 @@ address {
   max-width: 490px;
   width: 100%;
   -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 50px;
   background: #fff;
@@ -246,6 +248,7 @@ address {
   max-width: 490px;
   width: 100%;
   -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   padding: 50px;
   background: #fff;
@@ -387,12 +390,14 @@ address {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
           transform: translateY(-30%);
 }
 .modal-city__ul--open {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 .modal-city li {
@@ -429,6 +434,7 @@ address {
 }
 .main-city-icon--rotate {
   -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 
@@ -444,6 +450,7 @@ address {
 
 .modal-window--transform {
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -560,6 +567,7 @@ address {
   left: -50%;
   top: 170%;
   -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
           transform: translateY(-40px);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -576,6 +584,7 @@ address {
   pointer-events: all;
   opacity: 1;
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
   z-index: 5;
 }
@@ -602,6 +611,7 @@ address {
 }
 .header .is-opened .dropdown-icon {
   -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 
@@ -997,6 +1007,30 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__top {
+  margin-bottom: 80px;
+}
+.price__title {
+  font-size: 50px;
+  max-width: 551px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.price__subtitle {
+  font-size: 18px;
+  max-width: 570px;
+  font-weight: 500;
+}
+.price__name {
+  border-radius: 100px;
+  border: 1px solid rgba(52, 59, 78, 0.1490196078);
+  max-width: 312px;
+  max-height: 80px;
+  padding: 28px 50px;
 }
 .price__content {
   margin-bottom: 80px;
@@ -1012,10 +1046,69 @@ address {
 }
 .price__table__header, .price__table, .price__table__one {
   display: grid;
-  grid-template-columns: 1.5fr 0.4fr 0.4fr;
+  grid-template-columns: 1.5fr 0.7fr 0.3fr;
 }
 .price__table__header li, .price__table li, .price__table__one li {
-  max-width: 460px;
+  max-width: 462px;
+}
+.price__table__header {
+  font-weight: 500;
+  position: relative;
+}
+.price__table__header::after {
+  content: "";
+  position: absolute;
+  top: 225%;
+  left: 0%;
+  border: 1px solid rgba(52, 59, 78, 0.15);
+  width: 1160px;
+  height: 0px;
+}
+.price__table__one__price {
+  font-weight: 500;
+  color: #ff7826;
+}
+.price__table__text {
+  font-size: 18px;
+}
+.price__table__text p {
+  margin-top: 20px;
+}
+.price__table__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+.price__table__sale {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 18px;
+}
+.price__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 17px;
+}
+.price__footer__arrow {
+  border-radius: 100%;
+  border: 1px solid rgba(52, 59, 78, 0.1490196078);
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.price__full {
+  font-size: 24px;
 }
 
 .footer__inner {
@@ -1067,6 +1160,7 @@ address {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
           transform: translateY(-30%);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1088,6 +1182,7 @@ address {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 .footer__head-mail span {
@@ -1099,6 +1194,7 @@ address {
 }
 .footer .nav-check-icon--rotate {
   -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
 }
 .footer .footer__head-mail {
@@ -1281,10 +1377,12 @@ address {
   .works__one::after, .works__two::after {
     scale: 0.8;
     -webkit-transform: translateX(-15%);
+        -ms-transform: translateX(-15%);
             transform: translateX(-15%);
   }
   .masters__inner::after {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
   .masters__title {
@@ -1293,6 +1391,7 @@ address {
   }
   .masters__title::after {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
   .masters__text {
@@ -1358,6 +1457,7 @@ address {
   }
   .quality__title::after {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   .quality__text {
@@ -1391,6 +1491,7 @@ address {
     top: 18.5%;
     left: 46%;
     -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
             transform: scale(1.15);
   }
   .works__item {
@@ -1634,6 +1735,7 @@ address {
   }
   .masters__inner::after {
     -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
             transform: scale(0.6);
   }
   .masters__title {
