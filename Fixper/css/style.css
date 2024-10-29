@@ -1044,25 +1044,41 @@ address {
   gap: 65px;
   width: 100%;
 }
-.price__table__header, .price__table, .price__table__one {
+.price__table__header, .price__table__one, .price__table__two, .price__table__three, .price__table__four {
   display: grid;
-  grid-template-columns: 1.5fr 0.7fr 0.3fr;
+  grid-template-columns: 1.5fr 0.6fr 0.4fr;
 }
-.price__table__header li, .price__table li, .price__table__one li {
+.price__table__header li, .price__table__one li, .price__table__two li, .price__table__three li, .price__table__four li {
   max-width: 462px;
 }
 .price__table__header {
   font-weight: 500;
+}
+.price__table__header, .price__table__one, .price__table__two, .price__table__four {
   position: relative;
 }
-.price__table__header::after {
+.price__table__header::after, .price__table__one::after, .price__table__two::after, .price__table__four::after {
   content: "";
   position: absolute;
   top: 225%;
   left: 0%;
   border: 1px solid rgba(52, 59, 78, 0.15);
-  width: 1160px;
+  width: 100%;
   height: 0px;
+  max-width: 1100px;
+}
+.price__table__three {
+  position: relative;
+}
+.price__table__three::after {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 0%;
+  border: 1px solid rgba(52, 59, 78, 0.15);
+  width: 100%;
+  height: 0px;
+  max-width: 1100px;
 }
 .price__table__one__price {
   font-weight: 500;
@@ -1428,6 +1444,40 @@ address {
   }
   .swiper {
     max-height: 459px;
+  }
+}
+@media (max-width: 1200px) {
+  .price__top {
+    max-width: 432px;
+  }
+  .price__top p {
+    font-size: 16px;
+  }
+  .price__name {
+    max-width: 248px;
+    max-height: 60px;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .price__title {
+    font-size: 30px;
+  }
+  .price__content li {
+    font-size: 16px;
+  }
+  .price__table__header, .price__table__one, .price__table__two, .price__table__three, .price__table__four {
+    display: grid;
+    grid-template-columns: 1.2fr 0.5fr 0.5fr;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .price__table__one::after, .price__table__two::after {
+    top: 150%;
+    left: 0%;
+  }
+  .price__full {
+    font-size: 20px;
   }
 }
 @media (max-width: 1100px) {
