@@ -858,6 +858,10 @@ address {
   gap: 65px;
   width: 100%;
 }
+.price__content--mobile {
+  display: flex;
+  flex-direction: column;
+}
 .price__table__header, .price__table__one, .price__table__two, .price__table__three, .price__table__four {
   display: grid;
   grid-template-columns: 1.5fr 0.6fr 0.4fr;
@@ -1338,6 +1342,24 @@ address {
     gap: 15px;
   }
 }
+@media (max-width: 930px) {
+  .price__wrapper {
+    padding: 60px 50px;
+  }
+  .price__header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .price__top {
+    max-width: none;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .price__title, .price__subtitle {
+    max-width: none;
+  }
+}
 @media (max-width: 900px) {
   .hero__inner {
     display: flex;
@@ -1375,6 +1397,9 @@ address {
   }
 }
 @media (max-width: 800px) {
+  .price__table__header, .price__table__one, .price__table__two, .price__table__three, .price__table__four {
+    grid-template-columns: 0.9fr 0.5fr 0.5fr;
+  }
   .footer__head {
     grid-template-columns: 1fr 1fr;
     font-size: 20px;
@@ -1470,6 +1495,9 @@ address {
   }
   .masters__mobile__animate {
     display: block;
+  }
+  .price__content {
+    display: none;
   }
   .swiper {
     max-width: 690px;

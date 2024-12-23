@@ -379,6 +379,11 @@
         gap: 65px;
         width: 100%;
     }
+    &content--mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
 
     &table__header,
     &table__one,
