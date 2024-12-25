@@ -861,6 +861,54 @@ address {
 .price__content--mobile {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.price__mobile__table {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.price__mobile__table::after {
+  content: "";
+  border: 1px solid rgba(52, 59, 78, 0.2);
+  width: 100%;
+  position: absolute;
+  top: 125%;
+  left: 0%;
+}
+.price__mobile__table--dif {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.price__mobile__table--dif::after {
+  content: "";
+  border: 1px solid rgba(52, 59, 78, 0.2);
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0%;
+}
+.price__mobile__table__price {
+  display: flex;
+  justify-content: space-between;
+}
+.price__mobile__table__text {
+  margin-bottom: 14px;
+}
+.price__one {
+  opacity: 0.5;
+}
+.price__two--color {
+  color: #ff7826;
+  font-weight: 500;
+}
+.price__two {
+  font-weight: 500;
+}
+.price__two--ns {
+  text-decoration: line-through;
 }
 .price__table__header, .price__table__one, .price__table__two, .price__table__three, .price__table__four {
   display: grid;
