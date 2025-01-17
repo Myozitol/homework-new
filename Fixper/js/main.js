@@ -254,6 +254,18 @@ mainCityModal.addEventListener('click', () =>{
             },
         });
 
+        // Слайдер работы =====================================
+        new Swiper('.examples__inner', {
+            // // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            navigation: {
+                nextEl: '.examples__buttons__next',
+                prevEl: '.examples__buttons__prev',
+            },
+            spaceBetween: 30,
+        });
+
 }) ();
 
 
